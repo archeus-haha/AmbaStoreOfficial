@@ -1,0 +1,405 @@
+<html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AmbaStore - Pro Gaming Store</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#0b0f19;
+color:white;
+}
+
+/* BACKGROUND CANVAS (digerakkan via JavaScript, bukan CSS) */
+#bg-canvas{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:-1;
+display:block;
+}
+
+/* NAVBAR */
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+background:#111827cc;
+backdrop-filter:blur(6px);
+position:sticky;
+top:0;
+box-shadow:0 0 20px rgba(0,0,0,0.6);
+z-index:10;
+}
+
+nav h1{
+color:#00e5ff;
+letter-spacing:1px;
+}
+
+nav a{
+color:#cbd5e1;
+margin-left:15px;
+text-decoration:none;
+font-size:14px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#00e5ff;
+}
+
+/* HERO */
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:70px 8%;
+gap:40px;
+}
+
+.hero-text{
+max-width:520px;
+}
+
+.hero-text h1{
+font-size:48px;
+color:#00e5ff;
+margin-bottom:10px;
+text-shadow:0 0 20px #00e5ff33;
+}
+
+.hero-text p{
+color:#9ca3af;
+margin-bottom:20px;
+line-height:1.5;
+}
+
+/* BUTTON */
+.btn{
+display:inline-block;
+padding:12px 18px;
+border-radius:10px;
+text-decoration:none;
+margin-right:10px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn-primary{
+background:#00e5ff;
+color:#000;
+box-shadow:0 0 15px #00e5ff55;
+}
+
+.btn-primary:hover{
+transform:translateY(-3px);
+box-shadow:0 0 25px #00e5ff99;
+}
+
+.btn-dark{
+background:#1f2937;
+color:white;
+border:1px solid #374151;
+}
+
+.btn-dark:hover{
+border-color:#00e5ff;
+color:#00e5ff;
+}
+
+/* SECTION */
+.section{
+padding:50px 8%;
+}
+
+.section h2{
+margin-bottom:20px;
+color:#00e5ff;
+}
+
+/* GRID CARDS */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+gap:20px;
+}
+
+/* CARD STYLE ROBLOX STYLE */
+.card{
+background:linear-gradient(145deg,#111827,#0f172a);
+padding:18px;
+border-radius:15px;
+border:1px solid #1f2937;
+transition:.3s;
+box-shadow:0 0 0 transparent;
+}
+
+.card:hover{
+transform:translateY(-6px);
+border-color:#00e5ff;
+box-shadow:0 0 20px #00e5ff22;
+}
+
+.card img{
+width:100%;
+height:140px;
+object-fit:cover;
+border-radius:10px;
+margin-bottom:10px;
+}
+
+.card h3{
+margin:10px 0 5px;
+color:white;
+}
+
+.card p{
+font-size:13px;
+color:#9ca3af;
+}
+
+/* INFO BOX */
+.info{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+}
+
+.box{
+background:#111827;
+padding:18px;
+border-radius:12px;
+border:1px solid #1f2937;
+}
+
+.box h4{
+color:#00e5ff;
+margin-bottom:8px;
+}
+
+/* CONTACT BUTTON */
+.contact{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+margin-top:15px;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:25px;
+color:#6b7280;
+border-top:1px solid #1f2937;
+margin-top:40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- BACKGROUND ANIMASI (JS only, tanpa CSS animation/keyframes) -->
+<canvas id="bg-canvas"></canvas>
+
+<nav>
+<img src="Box fruit.jpeg class=hero-logo"
+<div>
+<a href="#">Home</a>
+<a href="#produk">Produk</a>
+<a href="#info">Info</a>
+</div>
+</nav>
+
+<!-- BASICALLY MENU BY AMBA :v -->
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>AMBASTORE</h1>
+
+<p>
+Roblox Game Services Store <br>
+Joki • Fruit • Account • Fast & Trusted Service
+</p>
+
+<a href="https://wa.me/6285602495838" class="btn btn-primary">WhatsApp</a>
+<a href="https://whatsapp.com/channel/0029VbBzWAeFHWpssRsAXC0p" class="btn btn-dark">Channel</a>
+
+</div>
+
+<div>
+<img src="Logo Amba.jpeg"
+style="width:360px;border-radius:15px;box-shadow:0 0 25px #00e5ff22;">
+</div>
+
+</section>
+
+<!-- PRODUK -->
+<section class="section" id="produk">
+
+<h2>Game Services</h2>
+
+<div class="grid">
+
+<div class="card">
+  <a href="https://chat.whatsapp.com/GuPI53M7dPIFtvyNlUAeRe?s=cl&p=a&mlu=1">
+<img src="GB.jpeg">
+  <a>
+<h3>GB/Grub JB by AmbaStore</h3>
+<p>Klik gambar untuk menuju ke halaman berikutnya</p>
+</div>
+
+<div class="card">
+<a href="tiktok.com/@ambastoreofficial67">
+<img src="TikTok.jpeg">
+</a>
+<h3>Follow TikTok AmbaStore</h3>
+<p>Follow akun TikTok AmbaStore untuk mendukung</p>
+</div>
+
+<div class="card">
+  <a href="https://whatsapp.com/channel/0029VbBzWAeFHWpssRsAXC0p">
+<img src="Logo Amba.jpeg">
+</a>
+<h3>Channel / Saluran resmi AmbaStore</h3>
+<p>Channel resmi AmbaStore resmi yang berisi informasi stok, testi, dan giveaway</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- INFO -->
+<section class="section" id="info">
+
+<h2>Store Info</h2>
+
+<div class="info">
+
+<div class="box">
+<h4>Nama Store</h4>
+<p>AmbaStore</p>
+</div>
+
+<div class="box">
+<h4>Produk</h4>
+<p>Joki, Fruit, Akun</p>
+</div>
+
+<div class="box">
+<h4>System</h4>
+<p>Fast • Safe • Trusted</p>
+</div>
+
+</div>
+
+<div class="contact">
+
+<a class="btn btn-primary" href="https://wa.me/6281234567890">Chat WhatsApp</a>
+<a class="btn btn-dark" href="https://whatsapp.com/channel/XXXX">Join Channel</a>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 AmbaStore | Roblox Style UI
+</footer>
+
+<script>
+// ===== Background bergerak (Canvas + JS, tanpa CSS animation) =====
+const canvas = document.getElementById('bg-canvas');
+const ctx = canvas.getContext('2d');
+
+let w, h;
+function resize(){
+  w = canvas.width = window.innerWidth;
+  h = canvas.height = window.innerHeight;
+}
+window.addEventListener('resize', resize);
+resize();
+
+// Partikel cahaya bergaya "gaming" yang melayang & berkedip
+const PARTICLE_COUNT = 90;
+const particles = [];
+
+function rand(min, max){
+  return Math.random() * (max - min) + min;
+}
+
+function createParticle(){
+  return {
+    x: rand(0, w),
+    y: rand(0, h),
+    r: rand(1, 3),
+    speedX: rand(-0.3, 0.3),
+    speedY: rand(-0.5, -0.1), // melayang ke atas
+    alpha: rand(0.2, 0.9),
+    alphaSpeed: rand(0.003, 0.012),
+    alphaDir: Math.random() < 0.5 ? 1 : -1
+  };
+}
+
+for(let i = 0; i < PARTICLE_COUNT; i++){
+  particles.push(createParticle());
+}
+
+function drawBackground(){
+  // gradient gelap dasar
+  const grad = ctx.createLinearGradient(0, 0, 0, h);
+  grad.addColorStop(0, '#0b0f19');
+  grad.addColorStop(1, '#0f172a');
+  ctx.fillStyle = grad;
+  ctx.fillRect(0, 0, w, h);
+}
+
+function animate(){
+  drawBackground();
+
+  for(const p of particles){
+    // update posisi
+    p.x += p.speedX;
+    p.y += p.speedY;
+
+    // kedip (alpha berubah)
+    p.alpha += p.alphaSpeed * p.alphaDir;
+    if(p.alpha <= 0.15 || p.alpha >= 0.9){
+      p.alphaDir *= -1;
+    }
+
+    // reset kalau keluar layar (loop tak terbatas)
+    if(p.y < -10){
+      p.y = h + 10;
+      p.x = rand(0, w);
+    }
+    if(p.x < -10) p.x = w + 10;
+    if(p.x > w + 10) p.x = -10;
+
+    // gambar partikel bercahaya
+    ctx.beginPath();
+    ctx.fillStyle = `rgba(0, 229, 255, ${p.alpha})`;
+    ctx.shadowColor = '#00e5ff';
+    ctx.shadowBlur = 8;
+    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+    ctx.fill();
+  }
+
+  requestAnimationFrame(animate);
+}
+
+animate();
+</script>
+
+</body>
+</html>
+```
